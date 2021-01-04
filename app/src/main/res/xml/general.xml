@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:title="General Setting of App"
+        tools:visibility="visible">
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="@string/policy_key"
+            app:summary="@string/app_policy_summary"
+            app:title="@string/app_policy_title" />
+        <ListPreference
+            app:defaultValue="@string/app_like_default"
+            app:entries="@array/app_like_entries"
+            app:entryValues="@array/app_like_entryvalues"
+            app:key="@string/like_key"
+            app:title="@string/app_like_title"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

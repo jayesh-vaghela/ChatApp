@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        app:key="general"
+        app:title="@string/general_title"
+        app:summary="@string/generat_summary"
+        app:icon="@drawable/general"
+        app:useSimpleSummaryProvider="true">
+        <intent
+            android:targetPackage="com.example.chatapp"
+            android:targetClass="com.example.chatapp.Settings.General"
+            ></intent>
+    </Preference>
+
+
+    <Preference
+        app:key="app_info"
+        app:icon="@drawable/aboutapp"
+        app:title="@string/about_app_titlle"
+        app:summary="@string/about_app_summary"
+        app:useSimpleSummaryProvider="true">
+        <intent
+            android:targetPackage="com.example.chatapp"
+            android:targetClass="com.example.chatapp.Settings.App"
+            ></intent>
+    </Preference>
+
+
+    <Preference
+        app:key="user"
+        app:title="@string/app_user_title"
+        app:icon="@drawable/userinfo"
+        app:summary="@string/app_user_summary">
+        <intent
+            android:targetPackage="com.example.chatapp"
+            android:targetClass="com.example.chatapp.Settings.UserInfo"
+            ></intent>
+    </Preference>
+
+</PreferenceScreen>

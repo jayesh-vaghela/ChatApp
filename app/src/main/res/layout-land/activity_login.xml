@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/lin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/lin"
+        android:paddingTop="1dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:id="@+id/phone_no"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:inputType="number">
+        </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_verification_code"
+            android:text="Send OTP"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp">
+        </Button>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:id="@+id/code"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:textColorHint="@color/text"
+            android:textColor="@color/text">
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_code"
+            android:text="Verify Number"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
